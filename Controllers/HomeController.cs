@@ -15,15 +15,19 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        ViewBag.ListaCandidatos = BD.ListarCandidatos();
+        ViewBag.ListarPartidos = BD.ListarPartidos();
+        return View("Index");
     }
     public IActionResult VerDetallePartido(int idPartido){
+        
         return View();
     }
     public IActionResult VerDetalleCandidato(int idCandidato){
         return View();
     }
     public IActionResult AgregarCandidato(int idPartido){
+
         return View();
     }
     [HttpPost] IActionResult GuardarCandidato(Candidato Can){
