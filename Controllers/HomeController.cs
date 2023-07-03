@@ -14,15 +14,19 @@ public class HomeController : Controller
     }
 
     public IActionResult Index()
-    {
+    {  
+        int i = 0;
+        ViewBag.ListaCandidatos = BD.ListarCandidatos(i);
+        ViewBag.ListaPartidos = BD.ListarPartidos();
         return View("Index");
     }
     public IActionResult VerDetallePartido(int idPartido){
-        
-        ViewBag.InfoPartido = BD.VerInfoPartido;
+        int i = 0;
+        ViewBag.InfoPartido = BD.VerInfoPartido(i);
         return View("VerDetallePartido");
     }
     public IActionResult VerDetalleCandidato(int idCandidato){
+        
         return View();
     }
     public IActionResult AgregarCandidato(int idPartido){
