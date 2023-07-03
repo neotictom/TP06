@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="~/css/site.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,7 @@
 <body>
     <H1>ELECCIONES 2023</H1>
     <H2>PARTIDOS</H2>
-    @foreach (var Partido in ViewBag.Partido)
-    {
-        <p>@Partido</p>
-    }
-    <h2>CANDIDATOS</h2>
-    @foreach (var Candidato in ViewBag.ListaCandidatos)
-    {
-        <p>@Candidato</p>
-    }
+    
     
 </body>
 </html>
