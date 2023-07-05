@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RAapq8XsXGlMEEvK34SDNTuWy/5g4sTM4ba7hmHkGj0=",
+  "Hash": "STlIlWk6IOzHvyQnOLThd7auv3VNwQIeVVSKzlk0Idg=",
   "Source": "TP06",
   "BasePath": "_content/TP06",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\47496739\\Downloads\\TP06\\wwwroot\\img\\arg.png",
+      "SourceId": "TP06",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47496739\\Downloads\\TP06\\wwwroot\\",
+      "BasePath": "_content/TP06",
+      "RelativePath": "img/arg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\arg.png"
     },
     {
       "Identity": "C:\\Users\\47496739\\Downloads\\TP06\\wwwroot\\js\\site.js",
