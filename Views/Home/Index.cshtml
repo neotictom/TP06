@@ -10,7 +10,14 @@
 <body>
     <H1>ELECCIONES 2023</H1>
     <H2>PARTIDOS</H2>
-  
+    @if(ViewBag.ListaPartidos != null){
+    @for(int i = 0; i<ViewBag.ListaPartidos.Count; i++){
+        <p></p>
+    }
+    }
+    else{
+        <p>Todavia no hay partidos ingresados</p>
+    }
     
 </body>
 </html>
