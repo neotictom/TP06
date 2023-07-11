@@ -8,6 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Detalle del Candidato</h1>
+
+<div class="card">
+    <img src="@ViewBag.Candidato.Foto" class="card-img-top" alt="@ViewBag.Candidato.Nombre">
+    <div class="card-body">
+        <h5 class="card-title">@ViewBag.Candidato.Nombre</h5>
+        <p class="card-text">Apellido: @ViewBag.Candidato.Apellido</p>
+        <p class="card-text">Fecha de Nacimiento: @ViewBag.Candidato.FechaNacimiento.ToShortDateString()</p>
+        <p class="card-text">Postulación: @ViewBag.Candidato.Postulacion</p>
+    </div>
+</div>
+
+<a href='@Url.Action("VerDetallePartido", new { idPartido = ViewBag.Candidato.IdPartido })' class="btn btn-primary">Volver al Partido</a>
 </body>
 </html>

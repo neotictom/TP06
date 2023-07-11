@@ -1,6 +1,6 @@
 public class Candidato{
-    public int idCandidato{get;set;}
-    public int idPartido{get;set;}
+    public int IdCandidato{get;set;}
+    public int IdPartido{get;set;}
     public string Apellido{get;set;}
     public string Nombre{get; set;}
     public DateTime FechaNacimiento{get;set;}

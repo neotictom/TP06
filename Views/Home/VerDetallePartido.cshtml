@@ -8,6 +8,36 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Detalle del Partido</h1>
+
+<div class="card">
+    <img src="@ViewBag.Partido.Logo" class="card-img-top" alt="@ViewBag.Partido.Nombre">
+    <div class="card-body">
+        <h5 class="card-title">@ViewBag.Partido.Nombre</h5>
+        <p class="card-text">Fecha de Fundación: @ViewBag.Partido.FechaFundacion.ToShortDateString()</p>
+        <p class="card-text">Cantidad de Diputados: @ViewBag.Partido.CantidadDiputados</p>
+        <p class="card-text">Cantidad de Senadores: @ViewBag.Partido.CantidadSenadores</p>
+    </div>
+</div>
+
+<h2>Candidatos</h2>
+
+<div class="row">
+    @foreach (var candidato in ViewBag.Candidatos)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <img src="@candidato.Foto" class="card-img-top" alt="@candidato.Nombre">
+                <div class="card-body">
+                    <h5 class="card-title">@candidato.Nombre</h5>
+                    <p class="card-text">@candidato.Postulacion</p>
+                    <a href='@Url.Action("VerDetalleCandidato", new { idCandidato = candidato.IdCandidato })' class="btn btn-primary">Ver Detalle</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<a href='@Url.Action("AgregarCandidato", new { idPartido = ViewBag.Partido.IdPartido })' class="btn btn-success">Agregar Candidato</a>
 </body>
 </html>
