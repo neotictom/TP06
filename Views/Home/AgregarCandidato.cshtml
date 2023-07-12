@@ -12,33 +12,18 @@
 
 <form method="post" action='@Url.Action("GuardarCandidato")'>
     <input type="hidden" name="IdPartido" value="@ViewBag.IdPartido" />
-
-    <div class="form-group">
-        <label for="Apellido">Apellido</label>
-        <input type="text" class="form-control" id="Apellido" name="Apellido" required>
-    </div>
-
-    <div class="form-group">
-        <label for="Nombre">Nombre</label>
-        <input type="text" class="form-control" id="Nombre" name="Nombre" required>
-    </div>
-
-    <div class="form-group">
-        <label for="FechaNacimiento">Fecha de Nacimiento</label>
-        <input type="date" class="form-control" id="FechaNacimiento" name="FechaNacimiento" required>
-    </div>
-
-    <div class="form-group">
-        <label for="Foto">URL de la Foto</label>
-        <input type="text" class="form-control" id="Foto" name="Foto" required>
-    </div>
-
-    <div class="form-group">
-        <label for="Postulacion">Postulación</label>
-        <input type="text" class="form-control" id="Postulacion" name="Postulacion" required>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <p>Apellido</p>
+    <input type="text" class="form-control" id="Apellido" name="Apellido" required>
+    <p>Nombre</p>
+    <input type="text" class="form-control" id="Nombre" name="Nombre" required>
+    <p>Fecha de nacimiento</p>
+    <input type="date" class="form-control" id="FechaNacimiento" name="FechaNacimiento">
+    <p>Foto</p>
+    <input type="text" class="form-control" id="Foto" name="Foto">
+    <p>Postulacion</p>
+    <input type="text" class="form-control" id="Postulacion" name="Postulacion">
+    <br>
+    <button type="submit" >Guardar</button>
 </form>
 
 </body>

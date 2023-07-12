@@ -13,14 +13,10 @@
 <div class="row">
     @foreach (var partido in ViewBag.Partidos)
     {
-        <div class="col-md-4">
-            <div class="card">
-                <img src="@partido.Logo" class="card-img-top" alt="@partido.Nombre">
-                <div class="card-body">
-                    <h5 class="card-title">@partido.Nombre</h5>
-                    <a href='@Url.Action("VerDetallePartido", new { idPartido = partido.IdPartido })' class="btn btn-primary">Ver Detalle</a>
-                </div>
-            </div>
+        <div class="partido">
+        <img src="~/img/@partido.Logo" class="card-img-top" alt="@partido.Nombre">
+        <h5 class="card-title">@partido.Nombre</h5>
+        <button class="enviar" type="submit"><a href='@Url.Action("VerDetallePartido", new { idPartido = partido.IdPartido })'>Ver Detalle</a></button>
         </div>
     }
 </div>

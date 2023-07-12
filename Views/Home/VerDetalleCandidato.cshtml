@@ -10,16 +10,14 @@
 <body>
     <h1>Detalle del Candidato</h1>
 
-<div class="card">
+<div class="Candidato">
     <img src="@ViewBag.Candidato.Foto" class="card-img-top" alt="@ViewBag.Candidato.Nombre">
-    <div class="card-body">
-        <h5 class="card-title">@ViewBag.Candidato.Nombre</h5>
-        <p class="card-text">Apellido: @ViewBag.Candidato.Apellido</p>
-        <p class="card-text">Fecha de Nacimiento: @ViewBag.Candidato.FechaNacimiento.ToShortDateString()</p>
-        <p class="card-text">Postulación: @ViewBag.Candidato.Postulacion</p>
-    </div>
+    <h5>@ViewBag.Candidato.Nombre</h5>
+    <p>Apellido: @ViewBag.Candidato.Apellido</p>
+    <p>Fecha de Nacimiento: @ViewBag.Candidato.FechaNacimiento.ToShortDateString()</p>
+    <p>Postulación: @ViewBag.Candidato.Postulacion</p>
 </div>
 
-<a href='@Url.Action("VerDetallePartido", new { idPartido = ViewBag.Candidato.IdPartido })' class="btn btn-primary">Volver al Partido</a>
+<button class="enviar" type="submit"><a href='@Url.Action("VerDetallePartido", new { idPartido = ViewBag.Candidato.IdPartido })'>Volver al Partido</a></button>
 </body>
 </html>
