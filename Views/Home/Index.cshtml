@@ -14,7 +14,7 @@
     @foreach (var partido in ViewBag.Partidos)
     {
         <div class="partido">
-        <img src="~/img/@partido.Logo" class="card-img-top" alt="@partido.Nombre">
+        <img src="~/img/@partido.Logo"  alt="@partido.Nombre" width="200px" height="auto">
         <h5 class="card-title">@partido.Nombre</h5>
         <button class="enviar" type="submit"><a href='@Url.Action("VerDetallePartido", new { idPartido = partido.IdPartido })'>Ver Detalle</a></button>
         </div>
